@@ -27,6 +27,8 @@ const Container = styled.div`
     width: 100%;
     height: 100vh;
     background: #63e4f2;
+    //background: url('/images/bg2.jpg');
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;

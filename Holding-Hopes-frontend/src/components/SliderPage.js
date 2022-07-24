@@ -38,7 +38,7 @@ function SliderPage() {
 
                     <div>
                         <Image>
-                            <img style={{width: '40%'}} src='/images/accountability.png' />
+                            <img  src='/images/counsil2.png' />
                         </Image>
                         <Text>
                             <h1>Qualifications & Accountability</h1>
@@ -58,7 +58,7 @@ function SliderPage() {
 
                     <div>
                         <Image>
-                            <img src='/images/privacy.png' />
+                            <img src='/images/slider2.png' />
                         </Image>
                         <Text>
                             <h1>Real Privacy</h1>

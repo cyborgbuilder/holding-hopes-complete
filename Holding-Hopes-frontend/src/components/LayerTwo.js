@@ -8,7 +8,8 @@ import SliderPage from './SliderPage'
 import Login from './Login'
 import Signup from './Signup'
 import Main from './Main';
-import AnotherBlank from './AnotherBlank';
+import Register from './Register';
+
 
 function LayerTwo() {
   const user = localStorage.getItem("token");
@@ -16,7 +17,7 @@ function LayerTwo() {
     <Container>
         <Blank />
         <VideoPage />
-        <SliderPage />
+       
         <Routes>
 			{user && <Route path="/Main" exact element={<Main />}/>}
 			<Route path="/signup" exact element={<Signup />} />
@@ -24,7 +25,8 @@ function LayerTwo() {
 			<Route path="/" element={<Navigate replace to="/login" />} />
 		</Routes>
 
-    <AnotherBlank />
+    <SliderPage />
+
         
         
     </Container>
