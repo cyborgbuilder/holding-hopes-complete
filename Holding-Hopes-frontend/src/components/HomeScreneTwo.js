@@ -14,7 +14,7 @@ function HomeScreneTwo() {
 const Container = styled.div`
     width: 100%;
     height: 100vh;
-    background:  #63e4f2;
+    background:  #3bb19b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +59,7 @@ h4{
   color: #fff;
   text-align: center;
   margin-top: 20px; 
- background: #0fc9e7;
+ background: #4adcc1;
  padding: 10px;
  border-radius: 15px;
  text-transform: capitalize;

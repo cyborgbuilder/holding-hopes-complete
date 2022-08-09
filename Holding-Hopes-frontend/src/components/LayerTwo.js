@@ -8,7 +8,7 @@ import SliderPage from './SliderPage'
 import Login from './Login'
 import Signup from './Signup'
 import Main from './Main';
-import Register from './Register';
+
 
 
 function LayerTwo() {
@@ -17,15 +17,14 @@ function LayerTwo() {
     <Container>
         <Blank />
         <VideoPage />
-       
-        <Routes>
+        <SliderPage />
+
+    <Routes>
 			{user && <Route path="/Main" exact element={<Main />}/>}
 			<Route path="/signup" exact element={<Signup />} />
 			<Route path="/login" exact element={<Login />} />
 			<Route path="/" element={<Navigate replace to="/login" />} />
 		</Routes>
-
-    <SliderPage />
 
         
         

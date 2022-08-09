@@ -1,10 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
+import Comments from './Comments';
+
+
 function Main() {
   return (
     <>
      <Container>
-        <h1>This page appear after login</h1>
+     <Comments
+        commentsUrl="http://localhost:3004/comments"
+        currentUserId="1"
+      />
+
+     
       </Container>   
     </>
   )

@@ -1,11 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
 import ReactPlayer from 'react-player'
+import 'bootstrap/dist/css/bootstrap.css'
+import { Navbar, Nav } from 'react-bootstrap'
 function VideoPage() {
   return (
     <Container>
         <ReactPlayer url='/images/bg_video.mp4'  config={{ file: { attributes: {autoPlay: true,muted: true  }}}} playing='playing' loop='true' width='' height='' />
 
+        <Navbar style={{position: "fixed", top: "0", width: "100%", background: "#3bb19b", opacity: "0.9", zIndex: "1000", zIndex: "1"}}   >
+
+<Navbar.Toggle style={{marginLeft: '20px'}} />
+<Navbar.Collapse>
+<Nav >
+    <Nav.Link  style={{marginRight: '12px', color: "#fff", fontWeight: "bold", fontSize: "18px", margin: "0 5px"}} href="">Home</Nav.Link>
+    <Nav.Link style={{marginRight: '12px', color: "#fff", fontWeight: "bold", fontSize: "18px", margin: "0 5px"}} href="">Services</Nav.Link>
+    <Nav.Link style={{marginRight: '12px', color: "#fff", fontWeight: "bold", fontSize: "18px", margin: "0 5px"}} href="">About</Nav.Link>
+    <Nav.Link style={{marginRight: '12px', color: "#fff", fontWeight: "bold", fontSize: "18px", margin: "0 5px"}} href="">Login</Nav.Link>
+    <Nav.Link style={{marginRight: '12px', color: "#fff", fontWeight: "bold", fontSize: "18px", margin: "0 5px"}} href="">Content</Nav.Link>
+</Nav>
+</Navbar.Collapse >
+
+<img src='/images/logo_1.png' style={{width: "6%", margin: "0 10px"}}/>
+
+</Navbar>
         <TextBox>
             <h1>Improve Your Life</h1>
             <h1>Reach Your Goals &</h1>
@@ -39,15 +57,14 @@ const TextBox = styled.div`
     position: absolute;
     top: 20%;
     left: 5%;
-    padding: 40px;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px, rgb(0 0 0 / 72%) 0px 30px 22px -10px;
 
     h1{
-        font-size: 65px;
-        color: #fff;
+        font-size: 51px;
+        color: black;
         margin: 10px 0;
-        text-decoration: underline;
 
         
     }
@@ -55,7 +72,8 @@ const TextBox = styled.div`
     p{
         font-size: 20px;
         padding: 5px;
-        color: #fff;
+        color: black;
+
 
     }
 
